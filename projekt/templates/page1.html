@@ -48,11 +48,6 @@
     </form>
 
     <div class="result">
-        {% if prediction %}
-    {% set prediction_string = prediction.decode('utf-8') %}
-    {% set prediction_dict = prediction_string | to_json %}
-    {% set prediction_dict = prediction_string | trim | from_json %}
-    <h2>Prediction:</h2>
     {% if prediction %}
         <h2>Prediction:</h2>
         <p>{{ prediction }}</p>
